@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Загрузка клиентской базы (.clientbase)</h2>
+
+@using (Html.BeginForm("Index",
+				"Upload",
+				FormMethod.Post,
+				new { enctype = "multipart/form-data" }))
+{
+	<label for="file">Выберите файл</label>
+	<input type="file" name="file" id="file" /><br><br>
+	<input type="submit" value="Отправить" />
+	<br><br>
+	@ViewBag.Message
+}

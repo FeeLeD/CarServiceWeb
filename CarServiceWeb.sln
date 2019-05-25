@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarServiceWeb", "CarServiceWeb\CarServiceWeb.csproj", "{54EA0C06-D839-410B-8357-75A48CFF7695}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{9E71B48D-85E6-4A31-8A85-AFC17BD68E99}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{149F3E33-0013-45BC-BC87-628854C290BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{54EA0C06-D839-410B-8357-75A48CFF7695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54EA0C06-D839-410B-8357-75A48CFF7695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54EA0C06-D839-410B-8357-75A48CFF7695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E71B48D-85E6-4A31-8A85-AFC17BD68E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E71B48D-85E6-4A31-8A85-AFC17BD68E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E71B48D-85E6-4A31-8A85-AFC17BD68E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E71B48D-85E6-4A31-8A85-AFC17BD68E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149F3E33-0013-45BC-BC87-628854C290BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149F3E33-0013-45BC-BC87-628854C290BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149F3E33-0013-45BC-BC87-628854C290BB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{149F3E33-0013-45BC-BC87-628854C290BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149F3E33-0013-45BC-BC87-628854C290BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149F3E33-0013-45BC-BC87-628854C290BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

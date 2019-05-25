@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CarServiceWeb.Models.CarsModel>
+
+@{
+    ViewBag.Title = "CarsList";
+}
+
+<h2>Список автомобилей</h2>
+
+<p>
+    @Html.ActionLink("Добавить новую клиентскую базу", "Index")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VIN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EngingeVolume)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ManufactureYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Defects)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VIN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EngingeVolume)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ManufactureYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Defects)
+        </td>
+    </tr>
+}
+
+</table>

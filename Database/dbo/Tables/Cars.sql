@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Cars]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[CarName] NVARCHAR(50) NOT NULL,
+	[VIN] NVARCHAR(50) NOT NULL,
+	[EngineVolume] FLOAT NOT NULL, 
+	[ManufactureYear] DATETIME NOT NULL, 
+	[Defects] NVARCHAR(50) NOT NULL,
+	[ClientId] NVARCHAR(50) NOT NULL
+);
