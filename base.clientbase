@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<ClientBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Clients>
+      <Cars>
+        <Cars>
+          <DefectsDescription>
+            <string>Замена масла
+Замена тормозных колодок</string>
+          </DefectsDescription>
+          <VIN>NKFASD1284FSQQW</VIN>
+          <Model>A7</Model>
+          <EngineVolume>2.5</EngineVolume>
+          <ManufactureYear>2015-04-01T00:00:00</ManufactureYear>
+          <Name>Audi</Name>
+        </Cars>
+        <Cars>
+          <DefectsDescription>
+            <string>Замена свечей зажигания</string>
+          </DefectsDescription>
+          <VIN>IUWSDKA128FKS</VIN>
+          <Model>2108</Model>
+          <EngineVolume>1.6</EngineVolume>
+          <ManufactureYear>2004-04-01T00:00:00</ManufactureYear>
+          <Name>LADA</Name>
+        </Cars>
+      </Cars>
+      <Trucks />
+      <OrderDone>false</OrderDone>
+      <Name>Ловской Кирилл Юрьевич</Name>
+      <Number>88005553535</Number>
+      <OrderDate>2019-05-25T00:00:00+05:00</OrderDate>
+    </Clients>
+    <Clients>
+      <Cars>
+        <Cars>
+          <DefectsDescription>
+            <string>Диагностика двигателя</string>
+          </DefectsDescription>
+          <VIN>OWQICXZK21384KJSD</VIN>
+          <Model>Golf</Model>
+          <EngineVolume>1.8</EngineVolume>
+          <ManufactureYear>2018-08-01T00:00:00</ManufactureYear>
+          <Name>Volkswagen</Name>
+        </Cars>
+      </Cars>
+      <Trucks />
+      <OrderDone>true</OrderDone>
+      <Name>Попов Даниил Сергеевич</Name>
+      <Number>88005553434</Number>
+      <OrderDate>2019-05-09T00:00:00</OrderDate>
+    </Clients>
+  </List>
+</ClientBase>
