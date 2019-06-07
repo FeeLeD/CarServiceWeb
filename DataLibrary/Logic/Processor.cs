@@ -33,6 +33,7 @@ namespace DataLibrary.Logic
             string sqlcreate = @"create table [dbo].[" + carName + @"] 
                                 ([Id] INT NOT NULL PRIMARY KEY IDENTITY,
                                 [CarName] NVARCHAR(50) NOT NULL,
+                                [Model] NVARCHAR(50) NOT NULL,
                                 [VIN] NVARCHAR(50) NOT NULL,
                                 [EngineVolume] FLOAT NOT NULL, 
                                 [ManufactureYear] DATETIME NOT NULL, 
@@ -49,6 +50,7 @@ namespace DataLibrary.Logic
                 Car car = new Car
                 {
                     CarName = ConvertFromEnum(c.Name),
+                    Model = c.Model,
                     VIN = c.VIN,
                     EngineVolume = (float)c.EngineVolume,
                     ManufactureYear = c.ManufactureYear,
@@ -56,8 +58,8 @@ namespace DataLibrary.Logic
                     ClientId = data.Name
                 };
 
-                string sqldata = @"insert into dbo." + carName + @" (CarName, VIN, EngineVolume, ManufactureYear, Defects, ClientId) 
-                                values (@CarName, @VIN, @EngineVolume, @ManufactureYear, @Defects, @ClientId);";
+                string sqldata = @"insert into dbo." + carName + @" (CarName, Model, VIN, EngineVolume, ManufactureYear, Defects, ClientId) 
+                                values (@CarName, @Model, @VIN, @EngineVolume, @ManufactureYear, @Defects, @ClientId);";
 
                 SqlDataAccess.SaveData(sqldata, car);
             }
@@ -79,7 +81,7 @@ namespace DataLibrary.Logic
             foreach (var c in clientList)
             {
                 var tableName = ConvertToEnglish(c.Name) + "Cars";
-                string sql = @"SELECT ClientId, CarName, VIN, EngineVolume, ManufactureYear, Defects
+                string sql = @"SELECT ClientId, CarName, Model, VIN, EngineVolume, ManufactureYear, Defects
                             FROM dbo." + tableName;
                 var data = SqlDataAccess.LoadData<Car>(sql);
                 foreach(var row in data)

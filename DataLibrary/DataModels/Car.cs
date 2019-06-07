@@ -9,6 +9,7 @@ namespace DataLibrary.DataModels
     public class Car
     {
         public string CarName { get; set; }
+        public string Model { get; set; }
         public string VIN { get; set; }
         public float EngineVolume { get; set; }
         public DateTime ManufactureYear { get; set; }

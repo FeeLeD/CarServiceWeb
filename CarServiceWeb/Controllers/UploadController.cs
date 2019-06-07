@@ -80,6 +80,7 @@ namespace CarServiceWeb.Controllers
                 {
                     ClientId = row.ClientId,
                     CarName = row.CarName,
+                    Model = row.Model,
                     VIN = row.VIN,
                     EngingeVolume = row.EngineVolume,
                     ManufactureYear = row.ManufactureYear,

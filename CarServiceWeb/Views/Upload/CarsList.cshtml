@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<CarServiceWeb.Models.CarsModel>
 
 @{
-    ViewBag.Title = "CarsList";
+    ViewBag.Title = "Список автомобилей";
 }
 
 <h2>Список автомобилей</h2>
@@ -17,6 +17,9 @@
         <th>
             @Html.DisplayNameFor(model => model.CarName)
         </th>
+		<th>
+			@Html.DisplayNameFor(model => model.Model)
+		</th>
         <th>
             @Html.DisplayNameFor(model => model.VIN)
         </th>
@@ -40,6 +43,9 @@
         <td>
             @Html.DisplayFor(modelItem => item.CarName)
         </td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Model)
+		</td>
         <td>
             @Html.DisplayFor(modelItem => item.VIN)
         </td>
